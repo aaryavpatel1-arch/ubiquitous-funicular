@@ -18,16 +18,17 @@ canvas {
     transform: translateX(-50%);
     color: #ff3333;
     background: rgba(0, 0, 0, 0.9);
-    padding: 10px 20px;
+    padding: 12px 24px;
     border: 2px solid #ff3333;
     border-radius: 2px;
     text-align: center;
     pointer-events: none;
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 15px;
     text-transform: uppercase;
     z-index: 5;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
 }
 #crosshair {
     position: absolute;
@@ -48,6 +49,6 @@ canvas {
     height: 100vh;
     background: rgba(255, 0, 0, 0);
     pointer-events: none;
-    transition: background 0.2s ease;
+    transition: background 0.15s ease;
     z-index: 10;
 }

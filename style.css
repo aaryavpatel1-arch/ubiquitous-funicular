@@ -1,0 +1,53 @@
+body { 
+    margin: 0; 
+    overflow: hidden; 
+    background-color: #000; 
+    font-family: 'Courier New', Courier, monospace; 
+    user-select: none;
+}
+canvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    image-rendering: pixelated;
+}
+#ui {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ff3333;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px 20px;
+    border: 2px solid #ff3333;
+    border-radius: 2px;
+    text-align: center;
+    pointer-events: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    z-index: 5;
+}
+#crosshair {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.7);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 5;
+}
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 0, 0, 0);
+    pointer-events: none;
+    transition: background 0.2s ease;
+    z-index: 10;
+}
